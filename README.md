@@ -3,7 +3,7 @@
 
  <h1>Pros:</h1>
  <ul>
-  <li>A secure vault.</li>
-  <li>Data Encryption</li>
+  <li>Safety Vault</li>
+  <li>Data Security</li>
   <li>Powerful AES-128 Encryption</li>
  </ul>
