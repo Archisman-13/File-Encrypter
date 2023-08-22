@@ -13,7 +13,7 @@
 </ul>
 
 <h1>Screenshots</h1>
-<h5>Registration Page</h5>
+<h3>Registration Page</h3>
  <img src="https://github.com/Archisman-13/File-Encrypter/blob/main/uploads/Registration.png">
  
  <h1>Pros:</h1>
