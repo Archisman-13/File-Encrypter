@@ -18,7 +18,7 @@
 <h3>User Dashboard</h3>
  <img src="https://github.com/Archisman-13/File-Encrypter/blob/main/uploads/demo-upload.png">
 <h3>Encrypted File</h3>
- <img src="https://github.com/Archisman-13/File-Encrypter/blob/main/uploads/encrypted-file.png">
+ <img src="https://github.com/Archisman-13/File-Encrypter/blob/main/uploads/encrypted-file-pdf.png">
  <h1>Pros:</h1>
  <ul>
   <li>Safety Vault</li>
