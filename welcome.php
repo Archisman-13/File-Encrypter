@@ -13,19 +13,34 @@ if (isset($_POST['upload'])) {
     $folder = "./uploads/" . $filename;
  
     $db = mysqli_connect("localhost", "root", "", "file_data");
- 
+    
+   
+    // Now let's move the uploaded file into the folder: uploads
+    if (move_uploaded_file($tempname, $folder)) {
+        echo "<br><h3 style='text-align:center; color:green;'>  File uploaded successfully!</h3>";
+    } else {
+        echo "<br><h3 style='color:red';>  Failed to upload file!</h3>";
+    }
+           
+            if (isset($_POST['upload'])){
+                $username = $_POST['username'];
+            
+                // Normal Password
+                $pass = $_POST['password'];
+            
+                // Securing password using password_hash
+                $secure_pass = password_hash($pass, PASSWORD_BCRYPT);
+            }
+            
+
     // Get all the submitted data from the form
-    $sql = "INSERT INTO data (filename) VALUES ('$filename')";
+   // $sql = "INSERT INTO user_data (filename) VALUES ('$filename')";
+   $sql = "INSERT INTO mydata (filename, username, private_key) VALUES('$filename', '$username', '$secure_pass')";
  
     // Execute query
     mysqli_query($db, $sql);
- 
-    // Now let's move the uploaded file into the folder: uploads
-    if (move_uploaded_file($tempname, $folder)) {
-        echo "<h3 style='text-align:center;'>  File uploaded successfully!</h3>";
-    } else {
-        echo "<h3>  Failed to upload file!</h3>";
-    }
+
+    
 }
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
@@ -85,6 +100,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <div class="form-group form-outline mb-4">
                 <input class="form-control" type="file" name="uploadfile" value="" />
             </div>
+            <div class="form-group form-outline mb-4">
+                <label for="username">Username</label>
+                <input type="text" name="username" required><br><br>
+                
+                <label for="password">Enter 16-bit Key</label>
+                <input type="password" name="password" required><br><br> 
+            </div>
+            
+
+
+
             <div class="form-group form-outline mb-4">
                 <button class="btn btn-primary btn-lg btn-block" type="submit" name="upload">UPLOAD</button>
             </div>
