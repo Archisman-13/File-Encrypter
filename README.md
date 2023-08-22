@@ -11,6 +11,10 @@
  <li>Hence, even if the attacker gets to know the login credentials of the user the attacker cannot access the file.</li>
  <li>However, the user may access/decrypt his/her file after downloading using the private key he used while uploading the file</li>
 </ul>
+
+<h1>Screenshots</h1>
+<h5>Registration Page</h5>
+ <img src="https://github.com/Archisman-13/File-Encrypter/blob/main/uploads/Registration.png">
  
  <h1>Pros:</h1>
  <ul>
