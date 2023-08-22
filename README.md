@@ -15,7 +15,10 @@
 <h1>Screenshots</h1>
 <h3>Registration Page</h3>
  <img src="https://github.com/Archisman-13/File-Encrypter/blob/main/uploads/Registration.png">
- 
+<h3>User Dashboard</h3>
+ <img src="https://github.com/Archisman-13/File-Encrypter/blob/main/uploads/demo-upload.png">
+<h3>Encrypted File</h3>
+ <img src="https://github.com/Archisman-13/File-Encrypter/blob/main/uploads/encrypted-file.png">
  <h1>Pros:</h1>
  <ul>
   <li>Safety Vault</li>
