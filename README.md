@@ -3,12 +3,12 @@
 
 <h1>Workflow</h1>
 <ul>
- <li>A user registers his/her account</li>
- <li>After login the user can upload files to this secure vault</li>
- <li>After uploading the website prompts a Java code to encrypt the file</li>
- <li>The encrypted file is stored in the mysql database</li>
- <li>When the user downloads it again he will see the encrypted file</li>
- <li>Hence even if the attacker gets to know the login credentials of the user the attacker cannot access the file</li>
+ <li>A user registers his/her account.</li>
+ <li>After login, the user can upload files to this secure vault.</li>
+ <li>After uploading, the website prompts a Java code to encrypt the file.</li>
+ <li>The encrypted file is stored in the mysql database.</li>
+ <li>When the user downloads it he will be able to see the file in encrypted format only.</li>
+ <li>Hence, even if the attacker gets to know the login credentials of the user the attacker cannot access the file.</li>
  <li>However, the user may access/decrypt his/her file after downloading using the private key he used while uploading the file</li>
 </ul>
  
